@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Text Content</title>
   </head>
-  <body>
-    <form action="#">
-      <textarea
-        name="textArea"
-        id="textArea"
-        placeholder="Enter text to JSON here."
-      >
-      </textarea>
+  <body id="body">
+    <form id="jsonForm">
+      <label>
+        Json input:
+        <textarea
+          name="textArea"
+          id="textArea"
+          placeholder="Enter text to JSON here."
+        ></textarea>
+      </label>
+      <button id="submitButton" formaction="">Submit Text</button>
     </form>
-    <button id="submitButton">Submit Text</button>
+    <output id="outPut"></output>
     <script src="script.js"></script>
   </body>
 </html>
